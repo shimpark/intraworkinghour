@@ -1,0 +1,186 @@
+.fc-state-default {
+    text-shadow: none;
+    box-shadow: none;
+}
+
+.fc-basic-view .fc-body .fc-row {
+    min-height: 8rem;
+}
+
+.fc-toolbar .fc-button-group {
+    border: 1px solid #2961ff;
+    border-radius: 4px;
+}
+
+.fc-toolbar .fc-button {
+    background: #2961ff;
+    color: #fff;
+    border: none;
+}
+
+.fc-toolbar .fc-button:hover {
+    background: #2961ff;
+    opacity: 1;
+}
+
+.fc-toolbar .fc-button.fc-state-active {
+    background: #fff;
+    color: #2961ff;
+}
+
+
+.fc-widget-header {
+    border: 0px !important;
+}
+
+.fc-widget-content {
+    border-color: rgba(120, 130, 140, 0.13) !important;
+}
+
+.fc-widget-content tr {
+    border-bottom: none;
+}
+
+
+.fc-view {
+    margin-top: 0px;
+}
+
+.fc-toolbar {
+    margin: 0px;
+    padding: 24px 0px;
+}
+
+
+.fc-event {
+    border-radius: 0px;
+    border: none;
+    cursor: default;
+    color: #4F5467 !important;
+    font-size: 13px;
+    margin: 0;
+
+    padding: 0;
+    text-align: center;
+    background: none;
+}
+
+/******* icon *******/
+.fc-content i{
+	/*vertical-align: middle;*/
+	font-weight: ;
+}
+.fc-event-container .ew-total-off .fc-content i{
+	font-size: 1rem;
+	color: #f44336;
+}
+.fc-event-container .ew-total-out .fc-content i{
+	font-size: 1rem;
+	color: #8e24aa;
+}
+.fc-event-container .ew-total .fc-content i{
+	font-size: 1rem;
+	color: blue;
+}
+.fc-event-container .ew-off .fc-content i{
+	font-size: 1rem;
+	font-weight: bold;
+	color: #00c853;
+}
+.fc-event-container .ew-approval .fc-content i{
+	font-weight: bold;
+	color: #f44336;
+}
+
+/******* fc-titie *******/
+.fc-event-container .ew-approval .fc-content .fc-title{
+	color: #9e9e9e;
+	font-style: italic;
+}
+
+/******* fc-content *******/
+.fc-event-container .ew-total-out .fc-content, .fc-event-container .ew-total .fc-content, .fc-event-container .ew-total-off .fc-content,  .fc-event-container .ew-off .fc-content {
+	font-size: 1rem;
+	font-weight: bold;
+}
+.fc-event-container .ew-red .fc-content {
+	color: #f44336;
+}
+.fc-event-container .ew-green .fc-content {
+	color: #00c853;
+}
+.fc-event-container .ew-empty .fc-content {
+	height: 0;
+}
+.fc-content{
+	padding: 1px;
+	font-size: 12px;
+}
+
+/******* fc-content *******/
+.fc-event-container {
+	
+}
+
+/******* content-property *******/
+.fc-content .fc-title{
+	/*vertical-align: text-top*/
+}
+
+/******* weekend *******/
+.fc-sun {
+	color: #f44336;
+	background-color: #fff3e0 ;
+}
+
+.fc-sat {
+	color: #1976d2;
+	background-color: #fff3e0 ;
+}
+
+/******* fc-more-cell *******/
+.fc-more-cell {
+	text-align: center;
+}
+.fc-more-cell .fc-more {
+}
+
+/******* day-number *******/
+.fc-basic-view .fc-day-number {
+	padding: 2px 4px 2px 2px;
+	color:
+}
+
+/******* day header *******/
+.fc-day-header {
+	background-color: #fff;
+	font-size: 0.9rem;
+	font-weight: normal;
+}
+
+@media only screen and (max-width: 414px) {
+	.fc-basic-view .fc-body .fc-row {
+		min-height: 3.5rem;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.ew-cal {margin: 0 -30px;}
+	.ew-cal-rem {margin: 0 -0.75rem;}
+	/*.fc-event-container .ew-total-off .fc-content i{
+		font-size: 0.8rem;
+	}
+	.fc-event-container .ew-total-out .fc-content i{
+		font-size: 0.8rem;
+	}
+	.fc-event-container .ew-total .fc-content i{
+		font-size: 0.8rem;
+	}
+	.fc-event-container .ew-off .fc-content i{
+		font-size: 0.8rem;
+	}
+
+	.fc-event-container .ew-total-out .fc-content, .fc-event-container .ew-total .fc-content, .fc-event-container .ew-total-off .fc-content,  .fc-event-container .ew-off .fc-content {
+		font-size: 0.8rem;
+	}*/
+}
