@@ -1,18 +1,7 @@
-/* 로딩 서클 색 */
-.loader__figure {border: 0 solid #ED232E;}
-
-/* nav i 깨짐방지*/
-@media only screen and (max-width: 600px) {
-	.nav-wrapper i{
-    height: 64px;
-    line-height: 64px; } }
-
-/* logo */
-.topbar nav .nav-wrapper .brand-logo .text {letter-spacing:-1px !important;white-space: nowrap;}
-
-/*******************
+/*==================
 font weight
-*******************/
+==================*/
+html body .font-0 {font-size: 0;}
 html body .font-5 {font-size: 5px;}
 html body .font-6 {font-size: 6px;}
 html body .font-7 {font-size: 7px;}
@@ -45,15 +34,257 @@ html body .font-30 {font-size: 30px;}
 .cur_2{cursor: pointer; }
 .cur_3{cursor: wait; }
 
-/*******************
+/*==================
 fixed sidebar
-*******************/
+==================*/
 .left-part.fixed-left-part {background-color: #EDF4F8;z-index: 2;}
 .left-part {border:0 }
 
-/*******************
+/*==================
+common
+==================*/
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=url]:not(.browser-default):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]),
+.select-wrapper input.select-dropdown:focus {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+[type="checkbox"]:checked + span:not(.lever) {
+    color: #000;
+}
+[type="checkbox"]:checked + span:not(.lever):before {
+    border-right-color: #000;
+    border-bottom-color: #000;
+}
+.dropdown-content li > a,
+.dropdown-content li > span {
+    color: #5b616e;
+}
+.page-titles .custom-breadcrumb .breadcrumb:last-child {
+    color: #000 !important;
+}
+table {letter-spacing: -0.25px;}
+/* 로딩 서클 색
+==================*/
+.loader__figure {border: 0 solid #ED232E;}
+/* nav i 깨짐방지
+==================*/
+@media only screen and (max-width: 600px) {
+	.nav-wrapper i{
+    height: 64px;
+    line-height: 64px; } }
+/* logo
+==================*/
+.topbar nav .nav-wrapper .brand-logo .text {letter-spacing:-1px !important;white-space: nowrap;}
+
+/*==================
+main
+==================*/
+/* commute modal
+==================*/
+.commute-modal {
+    padding: 0 !important;
+    letter-spacing: -0.25px;
+}
+.commute-header {
+    padding-top: 1.5rem;
+}
+.commute-modal-tit {
+    padding: 1.25rem 1rem;
+    text-align: left;
+    margin: 0;
+    background-color: rgb(245, 245, 245);
+    border-bottom: 1px solid rgba(120, 130, 140, 0.13);
+} 
+.commute-modal-greet {
+    font-size: 1.875rem;
+    letter-spacing: -1px;
+}
+.commute-modal-greet.mrg {
+    margin: 3rem 0 2rem;
+}
+.commute-modal-break {
+    display: inline-block;
+}
+.commute-modal .swal2-actions {
+    margin: 1.5rem 0 2.5rem;
+}
+.commute-modal button {
+    padding: 0 16px;
+    margin: 0 5px;
+    line-height: 35px;
+    border: 0;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.commute-modal button.swal2-confirm {
+    color: #fff;
+    background-color: #00bcd4;
+}
+.commute-modal button.swal2-cancel {
+    color: #fff;
+    background-color: #9e9e9e;
+}
+.commute-modal.alarm {
+    padding-top: 1rem !important;
+}
+@media only screen and (max-width: 600px) {
+    .commute-modal {
+        width: 85% !important;
+    }
+}
+/* main wrapper
+==================*/
+#main-wrapper .scrollable.on {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: top 1s ease;
+}
+#main-wrapper .scrollable.on .card {
+    margin-top: 0 !important;
+}
+@media (min-width: 767px) {
+    #main-wrapper[data-layout="vertical"][data-layout="vertical"][data-sidebartype="mini-sidebar"] .topbar nav .nav-wrapper .brand-logo {
+        width: 90px;
+    }
+    #main-wrapper[data-layout="vertical"][data-sidebartype="mini-sidebar"] .topbar nav ul.left {
+        margin-left: 90px;
+    }
+    #main-wrapper[data-layout="vertical"][data-sidebartype="mini-sidebar"] .page-wrapper {
+        margin-left: 0;
+    }
+}
+@media (max-width: 766px){
+    #main-wrapper[data-sidebartype="mini-sidebar"] .topbar nav .nav-wrapper ul.left {
+        margin-left: 90px;
+    }
+    #main-wrapper[data-sidebartype="mini-sidebar"] .topbar nav ul a {
+        margin: 0;
+        font-size: 18px;
+        background-color: transparent;
+        box-shadow: none;
+    }
+}
+
+/*==================
+sub
+==================*/
+.card .card-content .card-title i {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1;
+    vertical-align: top;
+}
+/* 근로시간게이지
+==================*/
+.worktime-tbl {
+    margin-top: 2.25rem;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+.worktime-tbl > .col {
+    padding: 0;
+}
+.worktime-tbl-col {
+    position: relative;
+}
+.worktime-tbl-col .col {
+    padding: 0;
+    height: 18px;
+    line-height: 1.375;
+    border-left: 1px solid #dfe0e1;
+}
+.worktime-tbl-time {
+    display: inline-block;
+    position: absolute;
+    left: -1px;
+    top: -1.75rem;
+    line-height: 1;
+    width: 100%;
+}
+.worktime-tbl-time:before {
+    content: "";
+    width: 1px;
+    height: 0.75rem;
+    position: absolute;
+    top: 1rem;
+    left: 1px;
+    background-color: #dfe0e1;
+}
+.worktime-tbl-time.last {
+    left: auto;
+}
+.worktime-tbl-time.last:before {
+    left: -1px;
+}
+.worktime-tbl-color {
+    display: inline-block;
+    width: 14.28%;
+    vertical-align: top;
+}
+.worktime-tbl-color .block {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5px;
+    width: 15px;
+    height: 15px;
+}
+@media only screen and (max-width: 991.98px) {
+    .worktime-tbl-box {
+        padding: 0 !important;
+    }
+    .worktime-tbl-col .col {
+        height: 15px;
+    }
+    .worktime-tbl-color {
+        margin-top: 1rem;
+        width: 33.33%;
+    }
+}
+/* 근로현황
+==================*/
+.teamwork-tabs .tab a {
+    font-size: 16px;
+    color: #9098ac;
+}
+.teamwork-tabs .tab a:hover,
+.teamwork-tabs .tab a:focus,
+.teamwork-tabs .tab a:focus.active,
+.teamwork-tabs .tab a.active {
+    color: #5b616e;
+    background-color: transparent;
+}
+.teamwork-tabs .indicator {
+    background-color: #5b616e;
+}
+.teamwork-tbl {
+    table-layout: fixed;
+    margin-top: 1.5rem;
+}
+.teamwork-tbl.sum th:first-child {
+    width: 30%;
+}
+.teamwork-tbl.day th:first-child {
+    width: 10%;
+}
+
+/*==================
 default media
-*******************/
+==================*/
 @media only screen and (max-width: 600px) {
 	.ew-card{margin: 0 -20px;} /* card padding */
 }
