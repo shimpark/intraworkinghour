@@ -29,6 +29,8 @@
 	<meta name="theme-color" content="#ffffff">
     <link href="../../content/styles/style.css" rel="stylesheet">
     <!-- This page CSS -->
+    <link href="../../content/styles/custom.css" rel="stylesheet"> <!-- joy0108 추가 -->
+	<!-- Custom CSS -->
     <link href="../../content/styles/pages/authentication.css" rel="stylesheet">
     <!-- This page CSS -->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -57,27 +59,38 @@
         <!-- Login box.scss -->
         <!-- ============================================================== -->
         <div class="auth-wrapper d-flex no-block justify-content-center align-items-center" style="background:url(../../assets/images/big/auth-bg.jpg) no-repeat center center;">
-            <div class="auth-box">
+            <div class="auth-box p-b-40">
                 <div id="loginform">
                     <div class="logo">
-                        <span class="db"><img src="../../content/images/logo_40.png" alt="logo" /></span>
-                        <h5 class="font-medium m-b-20">Enjoy Wroking!</h5>
-                    </div>
+                        <img src="../../content/images/EW-login-img.png" alt="Enjoy Working">
+                    </div> <!-- joy0108 수정 -->
                     <!-- Form -->
                     <div class="row">
                         <form class="col s12" action="index.html">
+                            <!-- select -->
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <select name="Company" id="Company">
+                                        <option value="">대학내일</option>
+                                        <option value="_nhrcomm">NHR</option>
+                                        <option value="_nprcom">NPR</option>
+                                        <option value="_51percent">오십일퍼센트</option>
+                                        <option value="_research">리서치팩토리</option>
+                                    </select>
+                                </div>
+                            </div> <!-- joy0108 추가 -->
                             <!-- email -->
                             <div class="row">
                                 <div class="input-field col s12">
-                                    <input id="email" type="email" class="validate" required>
-                                    <label for="email">Email</label>
+                                    <input class="validate" id="ID" maxlength="50" placeholder="ID" type="text">
+                                    <label for="UserName">아이디</label>
                                 </div>
                             </div>
                             <!-- pwd -->
                             <div class="row">
                                 <div class="input-field col s12">
-                                    <input id="password" type="password" class="validate" required>
-                                    <label for="password">Password</label>
+                                    <input class="validate" id="Password" maxlength="20" name="Password" placeholder="Password" type="password" />
+                                    <label for="Password">패스워드</label>
                                 </div>
                             </div>
                             <!-- pwd -->
@@ -85,13 +98,13 @@
                                 <div class="col s7">
                                     <label>
                                         <input type="checkbox" />
-                                        <span>Remember Me?</span>
+                                        <span>아이디 저장</span>
                                     </label>
                                 </div>
-                                <div class="col s5 right-align"><a href="#" class="link" id="to-recover">Forgot Pwd?</a></div>
+                                <!-- <div class="col s5 right-align"><a href="#" class="link" id="to-recover">Forgot Pwd?</a></div> -->
                             </div>
                             <!-- pwd -->
-                            <div class="row m-t-40">
+                            <div class="row m-t-30">
                                 <div class="col s12">
                                     <button class="btn-large w100 red accent-4" type="submit">로그인</button>
                                 </div>
@@ -162,6 +175,9 @@
     $(function() {
         $(".preloader").fadeOut();
     });
+
+    //joy0108 추가 select initialize
+    $('select').formSelect();
     </script>
 </body>
 

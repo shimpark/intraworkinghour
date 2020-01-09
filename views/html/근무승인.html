@@ -244,171 +244,177 @@
                         <div id="Form-advance" class="card card card-default scrollspy">
                             <div class="card-content">
                                 <div class="col s12">
-                                    <h4 class="card-title m-b-0" style="padding-top: 1rem;"><i class="Small material-icons">av_timer</i> 승인 대기</h4>
+                                    <h4 class="card-title m-b-0" style="padding-top: 1rem;">승인 대기</h4>
                                     <div class="row">
                                         <div class="col s12 m-b-20">
                                             <label>※ 연장/야간/휴일/간주/소급 근무 가 포함되는 모든 근태 변경 내역은 승인이 필요합니다.</label>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <table class="centered base-table">
-                                            <thead>
-                                                <tr>
-                                                    <th class="grey lighten-4">신청시간</th>
-                                                    <th class="grey lighten-4">타입</th>
-                                                    <th class="grey lighten-4">신청(소급)사유</th>
-                                                    <th class="grey lighten-4">신청일</th>
-                                                    <th class="grey lighten-4">취소</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>20.01.12  / 14:00-24:00(2h)</td>
-                                                    <td>야근근로</td>
-                                                    <td>병가로 업무를 못함</td>
-                                                    <td>2020.01.11</td>
-                                                    <td>
-                                                        <a class="waves-effect waves-light btn-small red">취소</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>20.01.12  / 20:00-24:00(2h)<br>20.01.12  / 20:00-24:00(2h)<br>20.01.12  / 20:00-24:00(2h)<br>20.01.12  / 20:00-24:00(2h)</td>
-                                                    <td>야근/연장근로</td>
-                                                    <td>주말 경주 출장이 갔다 왔습니다.</td>
-                                                    <td>2020.01.11</td>
-                                                    <td><a class="waves-effect waves-light btn-small red">취소</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>20.01.12  / 20:00-24:00(2h)</td>
-                                                    <td>소급 신청</td>
-                                                    <td>실수로 제때 기입을 못했습니다.</td>
-                                                    <td>2020.01.11</td>
-                                                    <td><a class="waves-effect waves-light btn-small red">취소</a></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                        <div class="tbl-ovf-wrap"> <!-- joy0108 추가 -->
+                                            <table class="centered base-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="grey lighten-4">신청시간</th>
+                                                        <th class="grey lighten-4">타입</th>
+                                                        <th class="grey lighten-4">신청(소급)사유</th>
+                                                        <th class="grey lighten-4">신청일</th>
+                                                        <th class="grey lighten-4">취소</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>20.01.12  / 14:00-24:00(2h)</td>
+                                                        <td>야근근로</td>
+                                                        <td>병가로 업무를 못함</td>
+                                                        <td>2020.01.11</td>
+                                                        <td>
+                                                            <a class="waves-effect waves-light btn-small red">취소</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>20.01.12  / 20:00-24:00(2h)<br>20.01.12  / 20:00-24:00(2h)<br>20.01.12  / 20:00-24:00(2h)<br>20.01.12  / 20:00-24:00(2h)</td>
+                                                        <td>야근/연장근로</td>
+                                                        <td>주말 경주 출장이 갔다 왔습니다.</td>
+                                                        <td>2020.01.11</td>
+                                                        <td><a class="waves-effect waves-light btn-small red">취소</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>20.01.12  / 20:00-24:00(2h)</td>
+                                                        <td>소급 신청</td>
+                                                        <td>실수로 제때 기입을 못했습니다.</td>
+                                                        <td>2020.01.11</td>
+                                                        <td><a class="waves-effect waves-light btn-small red">취소</a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                         <div class="center-align m-t-30">
                                             <ul class="pagination">
-                                                <li class="disabled"><a><i class="material-icons">chevron_left</i></a></li>
+                                                <li class="disabled"><a>&lt;</a></li>
                                                 <li class="active"><a href="#">1</a></li>
-                                                <li class="disabled"><a><i class="material-icons">chevron_right</i></a></li>
-                                            </ul>
+                                                <li class="disabled"><a>&gt;</a></li>
+                                            </ul> <!-- joy0108 수정 -->
                                         </div>
                                     </div>
                                 </div>
                                 <hr style="margin:2.5rem 0">
                                 <div class="col s12">
-                                    <h4 class="card-title m-b-0" style="padding-top: 1rem;"><i class="Small material-icons">av_timer</i> 승인 대기</h4>
+                                    <h4 class="card-title m-b-0" style="padding-top: 1rem;">승인 대기</h4>
                                     <div class="row">
                                         <div class="col s12 m-b-20">
                                             <label>※ 연장/야간/휴일/간주/소급 근무 가 포함되는 모든 근태 변경 내역은 승인이 필요합니다.</label>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <table class="centered base-table">
-                                            <thead>
-                                                <tr>
-                                                    <th class="grey lighten-4">신청시간</th>
-                                                    <th class="grey lighten-4">타입</th>
-                                                    <th class="grey lighten-4">신청(소급)사유</th>
-                                                    <th class="grey lighten-4">신청일</th>
-                                                    <th class="grey lighten-4">승인</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>20.01.12  / 14:00-24:00(2h)</td>
-                                                    <td>야근근로</td>
-                                                    <td>병가로 업무를 못함</td>
-                                                    <td>2020.01.11</td>
-                                                    <td>
-                                                        <a class="waves-effect waves-light btn-small blue">승인</a>
-                                                        <a class="waves-effect waves-light btn-small red">반려</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>20.01.12  / 20:00-24:00(2h)<br>20.01.12  / 20:00-24:00(2h)<br>20.01.12  / 20:00-24:00(2h)<br>20.01.12  / 20:00-24:00(2h)</td>
-                                                    <td>야근/연장근로</td>
-                                                    <td>주말 경주 출장이 갔다 왔습니다.</td>
-                                                    <td>2020.01.11</td>
-                                                    <td>
-                                                        <a class="waves-effect waves-light btn-small blue">승인</a>
-                                                        <a class="waves-effect waves-light btn-small red">반려</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>20.01.12  / 20:00-24:00(2h)</td>
-                                                    <td>소급 신청</td>
-                                                    <td>실수로 제때 기입을 못했습니다.</td>
-                                                    <td>2020.01.11</td>
-                                                    <td>
-                                                        <a class="waves-effect waves-light btn-small blue">승인</a>
-                                                        <a class="waves-effect waves-light btn-small red">반려</a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                        <div class="tbl-ovf-wrap"> <!-- joy0108 추가 -->
+                                            <table class="centered base-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="grey lighten-4">신청시간</th>
+                                                        <th class="grey lighten-4">타입</th>
+                                                        <th class="grey lighten-4">신청(소급)사유</th>
+                                                        <th class="grey lighten-4">신청일</th>
+                                                        <th class="grey lighten-4">승인</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>20.01.12  / 14:00-24:00(2h)</td>
+                                                        <td>야근근로</td>
+                                                        <td>병가로 업무를 못함</td>
+                                                        <td>2020.01.11</td>
+                                                        <td>
+                                                            <a class="waves-effect waves-light btn-small blue">승인</a>
+                                                            <a class="waves-effect waves-light btn-small red">반려</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>20.01.12  / 20:00-24:00(2h)<br>20.01.12  / 20:00-24:00(2h)<br>20.01.12  / 20:00-24:00(2h)<br>20.01.12  / 20:00-24:00(2h)</td>
+                                                        <td>야근/연장근로</td>
+                                                        <td>주말 경주 출장이 갔다 왔습니다.</td>
+                                                        <td>2020.01.11</td>
+                                                        <td>
+                                                            <a class="waves-effect waves-light btn-small blue">승인</a>
+                                                            <a class="waves-effect waves-light btn-small red">반려</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>20.01.12  / 20:00-24:00(2h)</td>
+                                                        <td>소급 신청</td>
+                                                        <td>실수로 제때 기입을 못했습니다.</td>
+                                                        <td>2020.01.11</td>
+                                                        <td>
+                                                            <a class="waves-effect waves-light btn-small blue">승인</a>
+                                                            <a class="waves-effect waves-light btn-small red">반려</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                         <div class="center-align m-t-30">
                                             <ul class="pagination">
-                                                <li class="disabled"><a><i class="material-icons">chevron_left</i></a></li>
+                                                <li class="disabled"><a>&lt;</a></li>
                                                 <li class="active"><a href="#">1</a></li>
-                                                <li class="disabled"><a><i class="material-icons">chevron_right</i></a></li>
-                                            </ul>
+                                                <li class="disabled"><a>&gt;</a></li>
+                                            </ul> <!-- joy0108 수정 -->
                                         </div>
                                     </div>
                                 </div>
                                 <hr style="margin:2.5rem 0">
                                 <div class="col s12">
-                                    <h4 class="card-title" style="padding:1rem 0"><i class="Small material-icons">format_list_bulleted</i> 승인결과(반려 포함) 내역</h4>
+                                    <h4 class="card-title" style="padding:1rem 0">승인결과(반려 포함) 내역</h4>
                                     <div class="row">
-                                        <table class="centered base-table">
-                                            <thead>
-                                                <tr>
-                                                    <th class="grey lighten-4">신청자</th>
-                                                    <th class="grey lighten-4">신청시간</th>
-                                                    <th class="grey lighten-4">타입</th>
-                                                    <th class="grey lighten-4">신청일</th>
-                                                    <th class="grey lighten-4">상태</th>
-                                                    <th class="grey lighten-4">승인자</th>
-                                                    <th class="grey lighten-4">승인일</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>홍길동</td>
-                                                    <td>20.01.12  / 20:00-24:00(2h)</td>
-                                                    <td>야근근로</td>
-                                                    <td>2020.01.11</td>
-                                                    <td>승인</td>
-                                                    <td>홍길동</td>
-                                                    <td>2020.01.11</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>홍길동</td>
-                                                    <td>20.01.12  / 20:00-24:00(2h)<br>20.01.12  / 20:00-24:00(2h)<br>20.01.12  / 20:00-24:00(2h)<br>20.01.12  / 20:00-24:00(2h)</td>
-                                                    <td>야근/연장근로</td>
-                                                    <td>2020.01.11</td>
-                                                    <td>반려</td>
-                                                    <td>홍길동</td>
-                                                    <td>2020.01.11</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>홍길동</td>
-                                                    <td>20.01.12  / 20:00-24:00(2h)</td>
-                                                    <td>소급 신청</td>
-                                                    <td>2020.01.11</td>
-                                                    <td>승인</td>
-                                                    <td>홍길동</td>
-                                                    <td>2020.01.11</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                        <div class="tbl-ovf-wrap"> <!-- joy0108 추가 -->
+                                            <table class="centered base-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="grey lighten-4">신청자</th>
+                                                        <th class="grey lighten-4">신청시간</th>
+                                                        <th class="grey lighten-4">타입</th>
+                                                        <th class="grey lighten-4">신청일</th>
+                                                        <th class="grey lighten-4">상태</th>
+                                                        <th class="grey lighten-4">승인자</th>
+                                                        <th class="grey lighten-4">승인일</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>홍길동</td>
+                                                        <td>20.01.12  / 20:00-24:00(2h)</td>
+                                                        <td>야근근로</td>
+                                                        <td>2020.01.11</td>
+                                                        <td>승인</td>
+                                                        <td>홍길동</td>
+                                                        <td>2020.01.11</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>홍길동</td>
+                                                        <td>20.01.12  / 20:00-24:00(2h)<br>20.01.12  / 20:00-24:00(2h)<br>20.01.12  / 20:00-24:00(2h)<br>20.01.12  / 20:00-24:00(2h)</td>
+                                                        <td>야근/연장근로</td>
+                                                        <td>2020.01.11</td>
+                                                        <td>반려</td>
+                                                        <td>홍길동</td>
+                                                        <td>2020.01.11</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>홍길동</td>
+                                                        <td>20.01.12  / 20:00-24:00(2h)</td>
+                                                        <td>소급 신청</td>
+                                                        <td>2020.01.11</td>
+                                                        <td>승인</td>
+                                                        <td>홍길동</td>
+                                                        <td>2020.01.11</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                         <div class="center-align m-t-30">
                                             <ul class="pagination">
-                                                <li class="disabled"><a><i class="material-icons">chevron_left</i></a></li>
+                                                <li class="disabled"><a>&lt;</a></li>
                                                 <li class="active"><a href="#">1</a></li>
-                                                <li class="disabled"><a><i class="material-icons">chevron_right</i></a></li>
-                                            </ul>
+                                                <li class="disabled"><a>&gt;</a></li>
+                                            </ul> <!-- joy0108 수정 -->
                                         </div>
                                     </div>
                                 </div>

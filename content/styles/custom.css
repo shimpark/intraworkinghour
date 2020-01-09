@@ -43,6 +43,9 @@ fixed sidebar
 /*==================
 common
 ==================*/
+body {
+    letter-spacing: -.25px;
+}
 input:not([type]):focus:not([readonly]),
 input[type=text]:not(.browser-default):focus:not([readonly]),
 input[type=password]:not(.browser-default):focus:not([readonly]),
@@ -74,7 +77,22 @@ textarea.materialize-textarea:focus:not([readonly]),
 .page-titles .custom-breadcrumb .breadcrumb:last-child {
     color: #000 !important;
 }
-table {letter-spacing: -0.25px;}
+.btn, .btn-large, .btn-small, .btn-flat {
+    letter-spacing: -.25px;
+}
+table {
+    letter-spacing: -0.25px;
+}
+.left-part.fixed-left-part span.badge {
+    display: inline-block;
+    float: none;
+    padding: 0;
+    min-width: auto;
+    width: 8px;
+    height: 8px;
+    margin-left: 3px;
+    border-radius: 100%;
+}
 /* 로딩 서클 색
 ==================*/
 .loader__figure {border: 0 solid #ED232E;}
@@ -83,10 +101,18 @@ table {letter-spacing: -0.25px;}
 @media only screen and (max-width: 600px) {
 	.nav-wrapper i{
     height: 64px;
-    line-height: 64px; } }
+    line-height: 64px; }
+}
 /* logo
 ==================*/
 .topbar nav .nav-wrapper .brand-logo .text {letter-spacing:-1px !important;white-space: nowrap;}
+
+/*==================
+login
+==================*/
+#loginform .logo img { width: 100%; }
+#loginform .select-wrapper input.select-dropdown, .dropdown-content li > a, .dropdown-content li > span { font-size: 14px; }
+#loginform [type="checkbox"] + span:not(.lever) { padding-left: 25px; line-height: 28px; font-size: 14px; }
 
 /*==================
 main
@@ -108,6 +134,7 @@ main
     border-bottom: 1px solid rgba(120, 130, 140, 0.13);
 } 
 .commute-modal-greet {
+    padding: 0 1rem;
     font-size: 1.875rem;
     letter-spacing: -1px;
 }
@@ -119,6 +146,9 @@ main
 }
 .commute-modal .swal2-actions {
     margin: 1.5rem 0 2.5rem;
+}
+.commute-modal p {
+    padding: 0 1rem;
 }
 .commute-modal button {
     padding: 0 16px;
@@ -286,5 +316,14 @@ sub
 default media
 ==================*/
 @media only screen and (max-width: 600px) {
-	.ew-card{margin: 0 -20px;} /* card padding */
+    .ew-card{margin: 0 -20px;} /* card padding */
+    
+    .tbl-ovf-wrap {
+        overflow-x: scroll;
+        width: 100%;
+    }
+    .tbl-ovf-wrap table {
+        width: 640px;
+    }
+
 }
