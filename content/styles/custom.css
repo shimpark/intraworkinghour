@@ -311,6 +311,9 @@ sub
 .teamwork-tbl.day th:first-child {
     width: 10%;
 }
+.teamwork-tbl.name th:first-child {
+    width: 15%;
+}
 
 /*==================
 default media

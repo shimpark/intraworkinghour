@@ -385,8 +385,8 @@
                 id: 4,
                 title: '6h',
                 start: '2019-11-07T10:00:01',
-                className: "ew-total",
-                icon: 'sum'
+                className: "ew-off",
+                icon: 'familyday'
             },
             {
                 id: 5,
@@ -485,6 +485,10 @@
                             case 'dayoff':
                                 //element.find(".fc-title").before("<i class='ti-truck tiny'></i>&nbsp;");
                                 element.find(".fc-title").before("<i class='fas fa-plane tiny'></i>&nbsp;");
+                                break;
+                            case 'familyday':
+                                //element.find(".fc-title").before("<i class='ti-truck tiny'></i>&nbsp;");
+                                element.find(".fc-title").before("<i class='fas fa-users tiny'></i>&nbsp;");
                                 break;
                             default:
                                 break;
