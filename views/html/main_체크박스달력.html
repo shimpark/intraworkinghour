@@ -201,7 +201,7 @@
                             <hr />
                             <div class="m-20">
                                 <h6 class="font-14 font-bold">근무 승인</h6>
-                                <div>승인 대기  : 00건 <span class="badge red"></span></div> <!-- joy0108 추가 -->
+                                <div>승인 대기  : 00건 <span class="badge red"></span></div>
                                 <div>승인 완료/거절  : 00건 / 00건</div>
                                 <a class="waves-effect waves-light btn-small blue m-t-10">상세보기</a>
                             </div>
@@ -223,6 +223,12 @@
                                 <br />
                                 <br />
                             </div>
+                            <hr />
+                            <div class="m-20">
+                                <a href="https://intra.univ.me/" target="_blank" class="waves-effect waves-light btn-small  deep-orange darken-2">NPM으로 이동하기</a>
+                                <br />
+                                <br />
+                            </div> <!-- joy0113 추가 -->
                         </div>
                     </div>
                 </div>
@@ -385,8 +391,8 @@
                 id: 4,
                 title: '6h',
                 start: '2019-11-07T10:00:01',
-                className: "ew-off",
-                icon: 'familyday'
+                className: "ew-total",
+                icon: 'sum'
             },
             {
                 id: 5,
@@ -485,10 +491,6 @@
                             case 'dayoff':
                                 //element.find(".fc-title").before("<i class='ti-truck tiny'></i>&nbsp;");
                                 element.find(".fc-title").before("<i class='fas fa-plane tiny'></i>&nbsp;");
-                                break;
-                            case 'familyday':
-                                //element.find(".fc-title").before("<i class='ti-truck tiny'></i>&nbsp;");
-                                element.find(".fc-title").before("<i class='fas fa-users tiny'></i>&nbsp;");
                                 break;
                             default:
                                 break;
