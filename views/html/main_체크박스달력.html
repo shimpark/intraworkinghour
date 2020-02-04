@@ -191,13 +191,13 @@
                                     <a href="javascript: void(0);">디지털커뮤니케이션즈 / 팀장</a>
                                 </div>
                             </div>
-                            <hr />
+                            <!-- <hr />
                             <div class="m-20">
                                 <h6 class="font-14 font-bold">근태</h6>
                                 <div>근무 형태 : 부분선택적 근로시간제</div>
                                 <div>표준 근로시간 : 1일 8시간 (주5일)</div>
                                 <div>의무적 근로시간대 : 10:00 -15:00</div>
-                            </div>
+                            </div> joy0203 주석처리 -->
                             <hr />
                             <div class="m-20">
                                 <h6 class="font-14 font-bold">근무 승인</h6>
@@ -228,7 +228,7 @@
                                 <a href="https://intra.univ.me/" target="_blank" class="waves-effect waves-light btn-small  deep-orange darken-2">NPM으로 이동하기</a>
                                 <br />
                                 <br />
-                            </div> <!-- joy0113 추가 -->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -242,57 +242,66 @@
             <div class="right-part">
                 <div class="row">
                     <div class="col s12 m-t-10">
-                        <div class="m-b-0 card success-gradient">
-                            <div class="card-content">
-                                <div class="d-flex no-block align-items-center">
+                        <!-- joy0203 수정 START -->
+                        <div class="m-b-0 card success-gradient main-notice-box">
+                            <div class="card-content main-notice">
+                                <div class="d-flex align-items-center">
                                     <div>
                                         <div class="white-text font-15">2019년 12월 근로시간 정산이 완료되어 관련 보상이 지급 되었습니다.</div>
                                     </div>
-                                    <div class="ml-auto">
+                                    <div class="right-align ml-auto">
                                         <a class="waves-effect waves-light btn-small cyan">결과확인</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- joy0203 수정 END  -->
                     </div>
-                </div> <!-- joy0102 공지사항 영역 추가 -->
+                </div>
                 <div class="row">
-                    <div class="col l5 m12 s12 m-t-10">
+                     <!-- joy0203 수정 START -->
+                    <div class="col l5 m12 s12 m-t-10 main-worktime-box">
                         <div class="card danger-gradient">
                             <div class="card-content">
                                 <div class="d-flex no-block align-items-center">
                                     <div>
                                         <div class="white-text m-b-5 font-20 font-bold">TODAY : 20년 1월 10일</div>
-                                        <div class="white-text light-blue-text font-15">상태 : 근무중</div>
+                                        <div class="white-text light-blue-text font-15">부분선택적 근로시간제</div>
                                         <div class="white-text light-blue-text font-15">
-                                            <div>근무시간 : 09:00 – 18:00</div>
-                                            <div>(휴게 시간 : 12:00~13:00)</div>
+                                            <div>표준 근로시간 : 1일 8.0시간 (주5일)</div>
+                                            <div>의무적 근로시간대 : 10:00 - 15:00</div>
                                         </div>
                                     </div>
-                                    <div class="ml-auto">
+                                    <!-- <div class="ml-auto">
                                         <a class="btn-floating btn-large red right">퇴근</a>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col l7 m12 s12 m-t-10">
+                    <div class="col l7 m12 s12 m-t-10 main-worktime-box">
                         <div class="card info-gradient">
                             <div class="card-content">
                                 <div class="d-flex no-block align-items-center">
-                                    <div>
-                                        <div class="white-text m-b-5 font-20">2020년 01월 01일 - 01월 31일</div>
-                                        <div class="white-text light-blue-text font-15">기본근로시간: 160h(근무154+휴가6) / 160h</div>
-                                        <div class="white-text light-blue-text font-15">연장근로가능시간: 12.5h / 56(48+6)h</div>
-                                        <div class="white-text light-blue-text font-15">최대근로가능시간: 178.5h/ 208h</div>
-                                    </div>
-                                    <div class="ml-auto">
-                                        <a id="btnSave" class="btn-floating btn-large blue right">등록</a>
+                                    <div style="width: 100%;">
+                                        <div class="white-text m-b-5 font-20 font-bold">20년 1월 근로현황 <a id="btnSave" class="waves-effect waves-light btn-small blue right">등록</a></div>
+                                        <div class="m-t-15 m-b-5 worktime-chart-box">
+                                            <div class="grey lighten-5 worktime-chart">
+                                                <div class="blue accent-3 bar undertime"><span class="count">149</span></div>
+                                                <div class="grey lighten-2 bar mytime"><span class="count">160</span></div>
+                                                <div class="purple darken-4 bar overtime"><span class="count">190</span></div>
+                                                <span class="count all-count">216</span>
+                                            </div>
+                                        </div>
+                                        <div class="white-text light-blue-text font-12">※ 이 달의 기본근로시간 : 160h (소정근로일 * 8h)</div>
+                                        <div class="m-t-10 white-text light-blue-text font-15">실제 근무 시간 (현재) : 162.5h (154.5h / 휴가8h)</div>
+                                        <div class="white-text light-blue-text font-15">근무 계획 시간 (월 전체): 186.5h / 216h</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                     <!-- joy0203 수정 END -->
                 </div>
                 <div class="row ew-cal-rem">
                     <div class="col s12">
@@ -637,7 +646,7 @@
                     }
                 })
             }
-            commuteModal();
+            // commuteModal();
 
             //스크롤시 직원 기본정도 포지션
             $(window).scroll(function(){

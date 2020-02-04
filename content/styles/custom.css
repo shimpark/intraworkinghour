@@ -208,6 +208,73 @@ main
         box-shadow: none;
     }
 }
+/* 근로시간차트
+==================*/
+#btnSave {
+    margin-top: -3px;
+    width: 83px;
+}
+.main-worktime-box {
+    height: 195px;
+}
+.main-worktime-box .card {
+    height: 100%;
+}
+.worktime-chart-box {
+    width: 100%;
+}
+.worktime-chart {
+    position: relative;
+    width: 100%;
+    height: 20px;
+}
+.worktime-chart .bar {
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+.worktime-chart .bar.overtime {
+    left: 0;
+    width: 85%;
+    color: #fff;
+}
+.worktime-chart .bar.mytime {
+    left: 0;
+    width: 60%;
+    z-index: 1;
+}
+.worktime-chart .bar.undertime {
+    left: 0;
+    width: 50%;
+    color: #fff;
+    z-index: 2;
+}
+.worktime-chart .count {
+    position: absolute;
+    right: 5px;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+@media (max-width: 767px) {
+    .main-worktime-box,
+    .main-worktime-box .card {
+        height: auto;
+    }
+    .main-notice .btn-small {
+        margin-top: 5px;
+    }
+    .main-notice-box .card .card-content,
+    .main-worktime-box .card .card-content {
+        padding: 25px 15px;
+    }
+    .main-worktime-box .card {
+        margin: 0;
+    }
+    .worktime-chart .count {
+        font-size: 10px;
+    }
+}
 
 /*==================
 sub
@@ -218,6 +285,9 @@ sub
     font-size: 20px;
     line-height: 1;
     vertical-align: top;
+}
+.base-table {
+    font-size: 13px;
 }
 /* 근로시간게이지
 ==================*/
